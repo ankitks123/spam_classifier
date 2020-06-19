@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import nltk
 import sklearn
-df = pd.read_csv('/home/ankitsingh/Desktop/datasets/spam.csv', encoding='latin-1', sep=',')
+df = pd.read_csv('spam.csv', encoding='latin-1', sep=',')
 df.dropna(axis=1, inplace=True)
 label = df.v1
 messages = df.v2
